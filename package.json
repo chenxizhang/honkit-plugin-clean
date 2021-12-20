@@ -1,0 +1,27 @@
+{
+  "name": "honkit-plugin-clean",
+  "version": "1.0.0",
+  "description": "honkit plugin to clean content from markdown file",
+  "main": "index.js",
+  "engines": {
+    "honkit": ">1.x.x"
+  },
+  "honkit": {
+    "properties": {
+      "patterns": {
+        "type": "array",
+        "description": "how to clean the content",
+        "items": {
+          "type": "string"
+        },
+        "uniqueItems": true
+      }
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "chenxizhang",
+  "license": "ISC"
+}
