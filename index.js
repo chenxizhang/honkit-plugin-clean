@@ -3,10 +3,10 @@ module.exports = {
     // Map of hooks
     hooks: {
         "page:before": function (page) {
-            const patterns = this.book.config.get('patterns', [`---\nmarp.*\n---`, '---']);
+            const patterns = this.config.get('patterns', [`---\nmarp.*\n---`, '---']);
 
             if (patterns) {
-                patterns.foreach(pattern => {
+                patterns.forEach(pattern => {
                     page.content = page.content.replace(pattern, '');
                 })
             }

@@ -1,6 +1,6 @@
 {
   "name": "honkit-plugin-clean",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "honkit plugin to clean content from markdown file",
   "main": "index.js",
   "engines": {
